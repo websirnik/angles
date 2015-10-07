@@ -33,7 +33,7 @@ angles.chart = function (type) {
                 if($scope.height <= 0){
                     var height = $elem.parent()[0].clientHeight;
                     $elem.css({height: height});
-                    ctx.canvas.height = ctx.canvas.width / 2;
+                    ctx.canvas.height = height;
                 } else {
                     ctx.canvas.height = $scope.height || ctx.canvas.height;
                     autosize = true;
